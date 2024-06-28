@@ -2,7 +2,7 @@
 <h1 class="fs-3"><?= $title ?></h1>
 <div class="row g-1">
     <div class="lg-3 md-4">
-        <a class="btn btn-primary" href=<?=url_to("usuario.insert")?>><i class="bi bi-plus"></i> Usuários</a>
+        <a class="btn btn-primary" href=<?=url_to("categoria-usuario.insert")?>><i class="bi bi-plus"></i>Categorias de Usuários</a>
     </div>
 </div>
 <table class="table">
@@ -10,11 +10,9 @@
         <tr>
             <th>Código</th>
             <th>Nome</th>
-            <th>Categoria Usuário</th>
             <th><i class="bi bi-pencil"> Editar</i></th>
             <th><i class="bi bi-trash3"></i> Excluir</th>
         </tr>
     </thead>
 </table>
 </main>
-

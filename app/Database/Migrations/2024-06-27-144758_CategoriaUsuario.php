@@ -10,7 +10,7 @@ class CategoriaUsuario extends Migration
     {
         $this->forge->addField(
             [
-                "idCategoriaPerfil"=>
+                "idCategoriaUsuario"=>
                 [
                     "type"=>"int",
                     "constraint"=>"7",
@@ -23,7 +23,7 @@ class CategoriaUsuario extends Migration
                     "constraint"=>"100",
 
                 ],
-                "sigla"=>
+                "prefixo"=>
                 [
                     "type"=>"varchar",
                     "constraint"=>"3",

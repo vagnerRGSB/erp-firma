@@ -15,7 +15,7 @@ class UsuarioController extends BaseController
         
         $data["title"]="Lista de Usuários";
         echo view("layouts/header",$data);
-        echo view("layouts/navbarMaster");
+        echo view("layouts/menuMaster");
         echo view("usuarios/".$main);
         echo view("layouts/footer");
     }
@@ -27,7 +27,7 @@ class UsuarioController extends BaseController
 
         $data["title"]="Formulário Inserção de Usuario";
         echo view("layouts/header",$data);
-        echo view("layouts/navbarMaster");
+        echo view("layouts/menuMaster");
         echo view("usuarios/".$main);
         echo view("layouts/footer");
     }

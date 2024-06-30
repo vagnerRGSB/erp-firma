@@ -4,17 +4,17 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function page_login()
+    public function homeLogin()
     {
         echo view("layouts/header");
         echo view("pageLogin");
         echo view("layouts/footer");
     }
-    public function index()
+    public function homeMaster()
     {
         echo view("layouts/header");
-        echo view("layouts/navbarMaster");
-        echo view("pageMaster");
+        echo view("layouts/menuMaster");
+        echo view("homes/homeMaster");
         echo view("layouts/footer");
     }
 }

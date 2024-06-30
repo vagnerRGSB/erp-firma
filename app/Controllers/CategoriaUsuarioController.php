@@ -3,46 +3,41 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\CategoriaUsuarioModel;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class CategoriaUsuarioController extends BaseController
 {
-    public function list($main="list")
-    {
-        if(!is_file(APPPATH."/Views/categorias_usuarios/".$main.".php")){
-            throw new \CodeIgniter\Exceptions\PageNotFoundException($main);
-        }
+    private $lista;
 
-        $data["title"]="Lista Categorias de Usuários";
-        echo view("layouts/header",$data);
-        echo view("layouts/navbarMaster");
-        echo view("categorias_usuarios/".$main);
+    public function __construct()
+    {
+        $lista = new CategoriaUsuarioModel();
+    }
+
+    public function list()
+    {
+        
+        echo view("layouts/header");
+        echo view("layouts/menuMaster");
+        echo view("categorias_usuarios/list");
         echo view("layouts/footer");
     }
 
-    public function formInsert($main="formInsert")
+    public function formInsert()
     {
-        if(!is_file(APPPATH."/Views/categorias_usuarios/".$main.".php")){
-            throw new \CodeIgniter\Exceptions\PageNotFoundException($main);
-        }
 
-        $data["title"]="Formulário Inserção Categoria de Usuários";
-        echo view("layouts/header",$data);
-        echo view("layouts/navbarMaster");
-        echo view("categorias_usuarios/".$main);
+        echo view("layouts/header");
+        echo view("layouts/menuMaster");
+        echo view("categorias_usuarios/formInsert");
         echo view("layouts/footer");
     }
 
-    public function formUpdate($main="formUpdate")
+    public function formUpdate($param)
     {
-        if(!is_file(APPPATH."/Views/categorias_usuarios/".$main.".php")){
-            throw new \CodeIgniter\Exceptions\PageNotFoundException($main);
-        }
-
-        $data["title"]="Formulário Edição Categoria de Usuário";
-        echo view("layouts/header",$data);
-        echo view("layouts/navbarMaster");
-        echo view("usuarios/".$main);
+        echo view("layouts/header");
+        echo view("layouts/menuMaster");
+        echo view("usuarios/formUpdate");
         echo view("layouts/footer");
     }
 }

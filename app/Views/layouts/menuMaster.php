@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href=<?= url_to("home") ?>>Gestor</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-body"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
@@ -22,7 +22,7 @@
           <i class="bi bi-geo-alt"></i> Localização
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href=<?php echo url_to("estado.listar") ?>>Estados</a></li>
+            <li><a class="dropdown-item" href=<?= url_to("estado.listar") ?>>Estados</a></li>
             <li><a class="dropdown-item" href="#">Cidades Estados</a></li>
             <li><a class="dropdown-item" href="#">Localidades Cidades</a></li>
           </ul>

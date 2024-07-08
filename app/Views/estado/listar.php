@@ -1,6 +1,6 @@
 <div class="container bg-light mt-2 mb-2">
   <div class="mt-1 mb-1">
-    <h1 class="h1">Listagem Estado</h1>
+    <h1 class="h1">Lista Estados</h1>
   </div>
   <div class="mt-1 mb-1">
     <a class="btn btn-primary" href=<?= url_to("estado.inserir") ?>><i class="bi bi-plus"></i> Estado</a>

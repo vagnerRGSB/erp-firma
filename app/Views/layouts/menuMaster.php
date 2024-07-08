@@ -12,8 +12,8 @@
           <i class="bi bi-people"></i> Pessoas
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Usuários Sistema</a></li>
-            <li><a class="dropdown-item" href="#">Clientes</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de usuários do sistema</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de clientes</a></li>
           </ul>
         </li>
     
@@ -22,9 +22,9 @@
           <i class="bi bi-geo-alt"></i> Localização
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href=<?= url_to("estado.listar") ?>>Estados</a></li>
-            <li><a class="dropdown-item" href="#">Cidades Estados</a></li>
-            <li><a class="dropdown-item" href="#">Localidades Cidades</a></li>
+            <li><a class="dropdown-item" href=<?= url_to("estado.listar") ?>><i class="bi bi-list"></i> Lista Estados</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de cidades</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de localidades Cidades</a></li>
           </ul>
         </li>
 

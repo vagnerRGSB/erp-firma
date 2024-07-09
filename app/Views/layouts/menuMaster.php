@@ -45,8 +45,8 @@
           <i class="bi bi-gear"></i> Equipamentos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de categoria Maquinarios</a></li>
-            <li><a class="dropdown-item" href="#">Lista de Modelos das Marcas dos Maquinarios</a></li>
+            <li><a class="dropdown-item" href="<?= url_to("categoria-maquinario.listar") ?>"> <i class="bi bi-list"></i> Lista de categoria Maquinarios</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-list"></i> Lista de Modelos das Marcas dos Maquinarios</a></li>
           </ul>
         </li>
 

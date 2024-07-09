@@ -14,6 +14,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de usuários do sistema</a></li>
             <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de clientes</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de Marcas</a></li>
           </ul>
         </li>
     
@@ -36,6 +37,16 @@
             <li><a class="dropdown-item" href="<?= url_to("categoria-peca.listar") ?>"> <i class="bi bi-list"></i> Categorias Peças</a></li>
             <li><a class="dropdown-item" href="#">Especificações Peças</a></li>
             <li><a class="dropdown-item" href="#">Peças e Fabricantes</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-gear"></i> Equipamentos
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de categoria Maquinarios</a></li>
+            <li><a class="dropdown-item" href="#">Lista de Modelos das Marcas dos Maquinarios</a></li>
           </ul>
         </li>
 

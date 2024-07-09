@@ -1,0 +1,819 @@
+CRITICAL - 2024-07-09 14:25:48 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: CLI, Route: serve]
+in APPPATH\Config\Routes.php on line 22.
+ 1 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\Boot.php(351): CodeIgniter\CLI\Console->run()
+ 3 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 4 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+ERROR - 2024-07-09 14:26:20 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "cidade.listar" (urlencoded: "cidade.listar"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-07-09 14:26:20 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cidade.listar')
+ 2 APPPATH\Views\layouts\menuMaster.php(26): url_to('cidade.listar')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\layouts\\menuMaster.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layouts/menuMaster', [], true)
+ 6 APPPATH\Controllers\Home.php(16): view('layouts/menuMaster')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->onLoginHome()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 14:27:43 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "cidade.listar" (urlencoded: "cidade.listar"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-07-09 14:27:43 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cidade.listar')
+ 2 APPPATH\Views\layouts\menuMaster.php(26): url_to('cidade.listar')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\layouts\\menuMaster.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layouts/menuMaster', [], true)
+ 6 APPPATH\Controllers\Home.php(16): view('layouts/menuMaster')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->onLoginHome()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 14:27:46 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "cidade.listar" (urlencoded: "cidade.listar"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-07-09 14:27:46 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cidade.listar')
+ 2 APPPATH\Views\layouts\menuMaster.php(26): url_to('cidade.listar')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\layouts\\menuMaster.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layouts/menuMaster', [], true)
+ 6 APPPATH\Controllers\Home.php(16): view('layouts/menuMaster')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->onLoginHome()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 14:28:11 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "cidade.listar" (urlencoded: "cidade.listar"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-07-09 14:28:11 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cidade.listar')
+ 2 APPPATH\Views\layouts\menuMaster.php(26): url_to('cidade.listar')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\layouts\\menuMaster.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layouts/menuMaster', [], true)
+ 6 APPPATH\Controllers\Home.php(16): view('layouts/menuMaster')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->onLoginHome()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 14:28:13 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "cidade.listar" (urlencoded: "cidade.listar"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-07-09 14:28:13 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cidade.listar')
+ 2 APPPATH\Views\layouts\menuMaster.php(26): url_to('cidade.listar')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\layouts\\menuMaster.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layouts/menuMaster', [], true)
+ 6 APPPATH\Controllers\Home.php(16): view('layouts/menuMaster')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->onLoginHome()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 14:29:24 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "cidade.listar" (urlencoded: "cidade.listar"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-07-09 14:29:24 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cidade.listar')
+ 2 APPPATH\Views\layouts\menuMaster.php(26): url_to('cidade.listar')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\layouts\\menuMaster.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layouts/menuMaster', [], true)
+ 6 APPPATH\Controllers\Home.php(16): view('layouts/menuMaster')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->onLoginHome()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 14:29:27 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "cidade.listar" (urlencoded: "cidade.listar"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-07-09 14:29:27 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('cidade.listar')
+ 2 APPPATH\Views\layouts\menuMaster.php(26): url_to('cidade.listar')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\layouts\\menuMaster.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layouts/menuMaster', [], true)
+ 6 APPPATH\Controllers\Home.php(16): view('layouts/menuMaster')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->onLoginHome()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 14:32:09 --> ErrorException: Undefined variable $itens
+[Method: GET, Route: categoria-peca/listar]
+in APPPATH\Views\categoria-peca\listar.php on line 15.
+ 1 APPPATH\Views\categoria-peca\listar.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itens', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-peca\\listar.php', 15)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-peca\\listar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria-peca/listar', [], true)
+ 5 APPPATH\Controllers\CategoriaPecaController.php(14): view('categoria-peca/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaPecaController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaPecaController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 14:35:00 --> mysqli_sql_exception: Table 'erp_firma.categoria_peca' doesn't exist in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\erp-firma\app\Controllers\CategoriaPecaController.php(21): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\CategoriaPecaController->listar()
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaPecaController))
+#9 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-07-09 14:35:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'erp_firma.categoria_peca' doesn't exist
+[Method: GET, Route: categoria-peca/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categoria_peca`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CategoriaPecaController.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaPecaController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaPecaController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 14:35:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'erp_firma.categoria_peca' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categoria_peca`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categoria_peca`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categoria_peca`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CategoriaPecaController.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaPecaController->listar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaPecaController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 14:35:00 --> [Caused by] mysqli_sql_exception: Table 'erp_firma.categoria_peca' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *
+FROM `categoria_peca`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `categoria_peca`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `categoria_peca`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `categoria_peca`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CategoriaPecaController.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaPecaController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaPecaController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 16:39:06 --> mysqli_sql_exception: Table 'erp_firma.categoriamaquinarios' doesn't exist in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1721): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\erp-firma\system\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\erp-firma\app\Controllers\CategoriaMaquinarioController.php(21): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+#9 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-07-09 16:39:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'erp_firma.categoriamaquinarios' doesn't exist
+[Method: GET, Route: categoria-maquinario/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1721): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `categoriamaquinarios`', [], false)
+ 2 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\CategoriaMaquinarioController.php(21): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 16:39:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'erp_firma.categoriamaquinarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `categoriamaquinarios`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `categoriamaquinarios`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1721): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `categoriamaquinarios`', [], false)
+ 4 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\CategoriaMaquinarioController.php(21): CodeIgniter\BaseModel->paginate(10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 16:39:06 --> [Caused by] mysqli_sql_exception: Table 'erp_firma.categoriamaquinarios' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `categoriamaquinarios`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `categoriamaquinarios`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `categoriamaquinarios`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1721): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `categoriamaquinarios`', [], false)
+ 5 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\CategoriaMaquinarioController.php(21): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 16:40:06 --> ErrorException: Undefined variable $page
+[Method: GET, Route: categoria-maquinario/listar]
+in APPPATH\Views\categoria-maquinario\listar.php on line 26.
+ 1 APPPATH\Views\categoria-maquinario\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria-maquinario/listar', [], true)
+ 5 APPPATH\Controllers\CategoriaMaquinarioController.php(25): view('categoria-maquinario/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 16:40:50 --> ErrorException: Undefined variable $page
+[Method: GET, Route: categoria-maquinario/listar]
+in APPPATH\Views\categoria-maquinario\listar.php on line 26.
+ 1 APPPATH\Views\categoria-maquinario\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria-maquinario/listar', [], true)
+ 5 APPPATH\Controllers\CategoriaMaquinarioController.php(25): view('categoria-maquinario/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 16:41:40 --> ErrorException: Undefined variable $page
+[Method: GET, Route: categoria-maquinario/listar]
+in APPPATH\Views\categoria-maquinario\listar.php on line 26.
+ 1 APPPATH\Views\categoria-maquinario\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria-maquinario/listar', [], true)
+ 5 APPPATH\Controllers\CategoriaMaquinarioController.php(25): view('categoria-maquinario/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 16:42:48 --> ErrorException: Undefined variable $page
+[Method: GET, Route: categoria-maquinario/listar]
+in APPPATH\Views\categoria-maquinario\listar.php on line 26.
+ 1 APPPATH\Views\categoria-maquinario\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria-maquinario/listar', [], true)
+ 5 APPPATH\Controllers\CategoriaMaquinarioController.php(25): view('categoria-maquinario/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 16:43:04 --> ErrorException: Undefined variable $page
+[Method: GET, Route: categoria-maquinario/listar]
+in APPPATH\Views\categoria-maquinario\listar.php on line 26.
+ 1 APPPATH\Views\categoria-maquinario\listar.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $page', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\categoria-maquinario\\listar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('categoria-maquinario/listar', [], true)
+ 5 APPPATH\Controllers\CategoriaMaquinarioController.php(25): view('categoria-maquinario/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CategoriaMaquinarioController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoriaMaquinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 17:33:51 --> mysqli_sql_exception: Table 'erp_firma.marca' doesn't exist in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1721): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\erp-firma\system\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\erp-firma\app\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+#9 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-07-09 17:33:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'erp_firma.marca' doesn't exist
+[Method: GET, Route: marca/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1721): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `marca`', [], false)
+ 2 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:33:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'erp_firma.marca' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `marca`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `marca`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1721): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `marca`', [], false)
+ 4 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:33:51 --> [Caused by] mysqli_sql_exception: Table 'erp_firma.marca' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `marca`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `marca`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `marca`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1721): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `marca`', [], false)
+ 5 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 17:35:17 --> mysqli_sql_exception: Unknown column 'nome' in 'order clause' in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\erp-firma\system\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\erp-firma\app\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+#9 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+#10 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-07-09 17:35:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nome' in 'order clause'
+[Method: GET, Route: marca/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 4 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 5 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:35:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nome' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 6 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 7 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:35:17 --> [Caused by] mysqli_sql_exception: Unknown column 'nome' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 17:41:03 --> mysqli_sql_exception: Unknown column 'nome' in 'order clause' in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\erp-firma\system\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\erp-firma\app\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+#9 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+#10 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-07-09 17:41:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nome' in 'order clause'
+[Method: GET, Route: marca/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 4 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 5 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:41:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nome' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 6 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 7 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:41:03 --> [Caused by] mysqli_sql_exception: Unknown column 'nome' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 17:42:32 --> mysqli_sql_exception: Unknown column 'nome' in 'order clause' in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\erp-firma\system\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\erp-firma\app\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+#9 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+#10 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-07-09 17:42:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nome' in 'order clause'
+[Method: GET, Route: marca/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 4 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 5 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:42:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nome' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 6 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 7 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:42:32 --> [Caused by] mysqli_sql_exception: Unknown column 'nome' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 17:43:44 --> mysqli_sql_exception: Unknown column 'nome' in 'order clause' in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\erp-firma\system\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\erp-firma\app\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+#9 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+#10 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-07-09 17:43:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nome' in 'order clause'
+[Method: GET, Route: marca/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 4 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 5 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:43:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nome' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 6 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 7 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-09 17:43:44 --> [Caused by] mysqli_sql_exception: Unknown column 'nome' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`
+ORDER BY `nome`
+ LIMIT 10', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1288): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\MarcaController.php(22): CodeIgniter\BaseModel->paginate(10)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->listar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+ERROR - 2024-07-09 18:10:30 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', '', 3306, '', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\erp-firma\system\Database\Database.php(68): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\erp-firma\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#4 C:\xampp\htdocs\erp-firma\system\Commands\Database\CreateDatabase.php(136): CodeIgniter\Database\Config::forge()
+#5 C:\xampp\htdocs\erp-firma\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#6 C:\xampp\htdocs\erp-firma\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:create', Array)
+#7 C:\xampp\htdocs\erp-firma\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#8 C:\xampp\htdocs\erp-firma\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#9 C:\xampp\htdocs\erp-firma\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\erp-firma\system\Database\Database.php(68): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\erp-firma\system\Database\Config.php(111): CodeIgniter\Database\Database->loadForge(Object(CodeIgniter\Database\MySQLi\Connection))
+#3 C:\xampp\htdocs\erp-firma\system\Commands\Database\CreateDatabase.php(136): CodeIgniter\Database\Config::forge()
+#4 C:\xampp\htdocs\erp-firma\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#5 C:\xampp\htdocs\erp-firma\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:create', Array)
+#6 C:\xampp\htdocs\erp-firma\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#7 C:\xampp\htdocs\erp-firma\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#8 C:\xampp\htdocs\erp-firma\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#9 {main}

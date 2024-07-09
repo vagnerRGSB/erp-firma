@@ -24,6 +24,12 @@ $routes->get("/categoria-maquinario/editar/(:any)","CategoriaMaquinarioControlle
 $routes->post("/categoria-maquinario/onSave","CategoriaMaquinarioController::onSave",["as"=>"categoria-maquinario.onSave"]);
 $routes->get("/categoria-maquinario/onDelete/(:any)","CategoriaMaquinarioController::onDelete/$1",["as"=>"categoria-maquinario.onDelete"]);
 
+$routes->get("/marca/listar","MarcaController::listar",["as"=>"marca.listar"]);
+$routes->get("/marca/inserir","MarcaController::inserir",["as"=>"marca.inserir"]);
+$routes->get("/marca/editar/(:any)","MarcaController::editar/$1",["as"=>"marca.editar"]);
+$routes->post("/marca/onSave","MarcaController::onSave",["as"=>"marca.onSave"]);
+$routes->get("/marca/onDelete/(:any)","MarcaController::onDelete/$1",["as"=>"marca.onDelete"]);
+
 
 $routes->get('/',"Home::onLoginHome",["as"=>"home"]);
 $routes->get("/home/login", "Home::pageLogin",["as"=>"pagLogin"]);

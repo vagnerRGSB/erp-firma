@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href=<?= url_to("home") ?>>Gestor</a>
+    <a class="navbar-brand" href=<?= url_to("home") ?>><i class="bi bi-house"></i> Gestor</a>
     <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon bg-body"></span>
     </button>
@@ -14,7 +14,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de usuários do sistema</a></li>
             <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de clientes</a></li>
-            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de Marcas</a></li>
+            <li><a class="dropdown-item" href="<?= url_to("marca.listar") ?>"> <i class="bi bi-list"></i> Lista de Marcas</a></li>
           </ul>
         </li>
     
@@ -51,7 +51,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#"> Logout <i class="bi bi-person-x-fill"></i> </a>
         </li>
       </ul>
     </div>

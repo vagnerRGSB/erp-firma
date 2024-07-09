@@ -23,7 +23,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= url_to("estado.listar")?>"><i class="bi bi-list"></i> Lista Estados</a></li>
-            <li><a class="dropdown-item" href="<?= url_to("cidade.listar")?>"> <i class="bi bi-list"></i> Lista de cidades</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de cidades</a></li>
             <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de localidades Cidades</a></li>
           </ul>
         </li>
@@ -33,7 +33,7 @@
           <i class="bi bi-collection"></i> Insumos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Categorias Peças</a></li>
+            <li><a class="dropdown-item" href="<?= url_to("categoria-peca.listar") ?>"> <i class="bi bi-list"></i> Categorias Peças</a></li>
             <li><a class="dropdown-item" href="#">Especificações Peças</a></li>
             <li><a class="dropdown-item" href="#">Peças e Fabricantes</a></li>
           </ul>

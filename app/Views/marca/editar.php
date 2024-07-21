@@ -1,4 +1,4 @@
-<div class=container>
+<div class="container bg-secundary mt-4 mb-3">
     <div>
         <h1 class="h1"> Formulário Marca </h1>
     </div>
@@ -11,7 +11,7 @@
 
         <div class="mb-3 col-6">
             <label for="nome" class="form-label">Nome Marca</label>
-            <input name="nome" type="text" class="form-control" id="nome" aria-describedby="nomeHelp" value=<?= $item["nome"] ?>>
+            <input name="nome" type="text" class="form-control" id="nome" aria-describedby="nomeHelp" value="<?= $item["nome"] ?>">
             <div id="nomeHelp" class="form-text"></div>
         </div>
         <div>

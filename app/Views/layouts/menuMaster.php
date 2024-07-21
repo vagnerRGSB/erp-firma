@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href=<?= url_to("home") ?>><i class="bi bi-house"></i> Gestor</a>
     <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

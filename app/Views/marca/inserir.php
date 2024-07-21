@@ -1,6 +1,6 @@
-<div class=container>
+<div class="container">
     <div>
-        <h1 class="h1"> Formulário Marca </h1>
+        <h1 class="h1 mt-5"> Formulário Marca </h1>
     </div>
 
     <form action="<?= url_to("marca.onSave") ?>" method="post">

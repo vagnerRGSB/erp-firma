@@ -1,6 +1,6 @@
 <div class=container>
     <div>
-        <h1 class="h1"> Formulário Categoria Máquinario </h1>
+        <h1 class="h1"> Formulário Categoria Maquinário </h1>
     </div>
 
     <form action="<?= url_to("categoria-maquinario.onSave") ?>" method="post">

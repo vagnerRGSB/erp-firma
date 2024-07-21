@@ -9,7 +9,8 @@ class Marca extends Migration
     public function up()
     {
         $this->forge->addField([
-            "idMarca"=>[
+            "idMarca"=>
+            [
                 "type"=>"int",
                 "constraint"=>5,
                 "unsigned"=>true,

@@ -23,8 +23,7 @@ class CategoriaServico extends Migration
             ],
             "horaCobrada"=>
             [
-                "type"=>"varchar",
-                "constraint"=>"10",
+                "type"=>"double",
                 "null"=>true,
                 "default"=>"00.00"
             ]

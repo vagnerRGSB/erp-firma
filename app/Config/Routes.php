@@ -6,9 +6,16 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
+$routes->get("/categoria-servico/listar","CategoriaServicoController::listar",["as"=>"categoria-servico.listar"]);
+$routes->get("/categoria-servico/inserir","CategoriaServicoController::inserir",["as"=>"categoria-servico.inserir"]);
+$routes->get("/categoria-servico/editar/(:num)","CategoriaServicoController::editar/$1",["as"=>"categoria-servico.editar"]);
+$routes->post("/categoria-servico/onSave","CategoriaServicoController::onSave",["as"=>"categoria-servico.onSave"]);
+$routes->get("/categoria-servico/onDelete/(:num)","CategoriaServicoController::onDelete/$1",["as"=>"categoria-servico.onDelete"]);
+
+
 $routes->get("/estado/listar","EstadoController::listar",["as"=>"estado.listar"]);
 $routes->get("/estado/inserir","EstadoController::inserir",["as"=>"estado.inserir"]);
-$routes->get("/estado/editar/(:any)","EstadoController::editar/$1",["as"=>"estado.editar"]);
+$routes->get("/estado/editar/(:any)","EstadoController::editar/$1",["as"=>"estado.editar/$1"]);
 $routes->post("/estado/onSave","EstadoController::onSave",["as"=>"estado.onSave"]);
 $routes->get("/estado/onDelete/(:any)","EstadoController::onDelete/$1",["as"=>"estado.onDelete"]);
 

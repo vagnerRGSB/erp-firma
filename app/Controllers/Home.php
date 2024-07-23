@@ -4,12 +4,6 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function ofLogin()
-    {
-        echo view("layouts/header");
-        echo view("pageLogin");
-        echo view("layouts/footer");
-    }
     public function onLoginHome()
     {
         echo view("layouts/header");

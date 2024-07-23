@@ -6,6 +6,13 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
+$routes->get("/usuario/listar","UsuarioController::listar",["as"=>"usuario.listar"]);
+$routes->get("/usuario/inserir","UsuarioController:inserir",["as"=>"usuario.inserir"]);
+$routes->get("/usuario/editar/(:num)","UsuarioController:editar/$1",["as"=>"usuario.editar"]);
+$routes->post("/usuario/onSave","UsuarioController::onSave",["as"=>"usuario.onSave"]);
+$routes->get("/usuario/onDelete/(:num)","UsuarioController::onDelete",["as"=>"usuario.onDelete"]);
+
+
 $routes->get("/categoria-servico/listar","CategoriaServicoController::listar",["as"=>"categoria-servico.listar"]);
 $routes->get("/categoria-servico/inserir","CategoriaServicoController::inserir",["as"=>"categoria-servico.inserir"]);
 $routes->get("/categoria-servico/editar/(:num)","CategoriaServicoController::editar/$1",["as"=>"categoria-servico.editar"]);
@@ -39,5 +46,7 @@ $routes->get("/marca/onDelete/(:any)","MarcaController::onDelete/$1",["as"=>"mar
 
 
 $routes->get('/',"Home::onLoginHome",["as"=>"home"]);
-$routes->get("/home/login", "Home::pageLogin",["as"=>"pagLogin"]);
+
+$routes->get("/login/tela-login","LoginController::login",["as"=>"login.tela"]);
+
 

@@ -13,7 +13,10 @@ class UsuarioController extends BaseController
     }
     public function inserir()
     {
-
+        echo view("layouts/header");
+        echo view("layouts/menuMaster");
+        echo view("usuario/inserir");
+        echo view("layouts/footer");
     }
     public function editar($param)
     {

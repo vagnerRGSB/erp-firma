@@ -99,3 +99,16 @@ in SYSTEMPATH\Helpers\url_helper.php on line 494.
 11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-22 22:34:06 --> CodeIgniter\View\Exceptions\ViewException: Arquivo inválido: homes/homeMaster.php
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homes/homeMaster.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('homes/homeMaster', [], true)
+ 3 APPPATH\Controllers\Home.php(11): view('homes/homeMaster')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')

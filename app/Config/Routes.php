@@ -45,7 +45,7 @@ $routes->post("/marca/onSave","MarcaController::onSave",["as"=>"marca.onSave"]);
 $routes->get("/marca/onDelete/(:any)","MarcaController::onDelete/$1",["as"=>"marca.onDelete"]);
 
 
-$routes->get('/',"Home::onLoginHome",["as"=>"home"]);
+$routes->get('/',"Home::home",["as"=>"home"]);
 
 $routes->get("/login/tela-login","LoginController::login",["as"=>"login.tela"]);
 

@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="card-body">
                     <h2 class="card-title text-center">Cadastro de Usuário</h2>
-                    <form>
+                    <form action="" method="post">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome</label>
                             <input type="text" class="form-control" id="nome" name="nome" required>
@@ -21,7 +21,10 @@
                             <label for="confirmPassword" class="form-label">Confirme a Senha</label>
                             <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+                        <div class="mt-3 col-4">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+                        
                     </form>
                 </div>
             </div>

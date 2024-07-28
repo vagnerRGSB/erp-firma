@@ -9,7 +9,10 @@ class UsuarioController extends BaseController
 {
     public function listar()
     {
-        //
+        echo view("layouts/header");
+        echo view("layouts/menuMaster");
+        echo view("usuario/listar");
+        echo view("layouts/footer");
     }
     public function inserir()
     {

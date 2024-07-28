@@ -8,7 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get("/usuario/listar","UsuarioController::listar",["as"=>"usuario.listar"]);
 $routes->get("/usuario/inserir","UsuarioController::inserir",["as"=>"usuario.inserir"]);
-$routes->get("/usuario/editar/(:num)","UsuarioController:editar/$1",["as"=>"usuario.editar"]);
+$routes->get("/usuario/editar","UsuarioController::editar",["as"=>"usuario.editar"]);
 $routes->post("/usuario/onSave","UsuarioController::onSave",["as"=>"usuario.onSave"]);
 $routes->get("/usuario/onDelete/(:num)","UsuarioController::onDelete",["as"=>"usuario.onDelete"]);
 

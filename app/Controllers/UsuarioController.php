@@ -21,9 +21,12 @@ class UsuarioController extends BaseController
         echo view("usuario/inserir");
         echo view("layouts/footer");
     }
-    public function editar($param)
+    public function editar()
     {
-
+        echo view("layouts/header");
+        echo view("layouts/menuMaster");
+        echo view("usuario/editar");
+        echo view("layouts/footer");
     }
     public function onSave()
     {

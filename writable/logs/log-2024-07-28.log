@@ -93,3 +93,31 @@ Stack trace:
 #14 C:\xampp\htdocs\erp-firma\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
 #15 C:\xampp\htdocs\erp-firma\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
 #16 {main}
+CRITICAL - 2024-07-28 19:09:05 --> InvalidArgumentException: Missing argument for "(:num)" in route "usuario/editar/(:num)".
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1383.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1204): CodeIgniter\Router\RouteCollection->buildReverseRoute('usuario/editar/(:num)', [])
+ 2 SYSTEMPATH\Common.php(953): CodeIgniter\Router\RouteCollection->reverseRoute('usuario.editar')
+ 3 SYSTEMPATH\Helpers\url_helper.php(487): route_to('usuario.editar')
+ 4 APPPATH\Views\layouts\menuMaster.php(17): url_to('usuario.editar')
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\layouts\\menuMaster.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('layouts/menuMaster', [], true)
+ 8 APPPATH\Controllers\Home.php(10): view('layouts/menuMaster')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->home()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-07-28 20:04:01 --> ArgumentCountError: Too few arguments to function App\Controllers\UsuarioController::editar(), 0 passed in C:\xampp\htdocs\erp-firma\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: usuario/editar]
+in APPPATH\Controllers\UsuarioController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->editar()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')

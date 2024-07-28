@@ -14,7 +14,7 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= url_to("categoria-servico.listar") ?>"> <i class="bi bi-list"></i> Lista categorias serviços prestados</a></li>
             <li><a class="dropdown-item" href="<?= url_to("usuario.inserir") ?>"> <i class="bi bi-list"></i> Lista de usuários do sistema</a></li>
-            <li><a class="dropdown-item" href="<?= url_to("usuario.editar") ?>"> <i class="bi bi-list"></i> Lista de clientes</a></li>
+            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de clientes</a></li>
             <li><a class="dropdown-item" href="<?= url_to("marca.listar") ?>"> <i class="bi bi-list"></i> Lista de Marcas</a></li>
 
           </ul>
@@ -58,7 +58,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= url_to("login.tela") ?>"> Tela Login</a></li>
-            <li><a class="dropdown-item" href="#"> Editar meu perfil</a></li>
+            <li><a class="dropdown-item" href="<?= url_to("usuario.editar") ?>"> Editar meu perfil</a></li>
             <li><a class="dropdown-item" href="#"> Finalizar seção </a></li>
           </ul>
         </li>

@@ -32,6 +32,10 @@ class UsuarioController extends BaseController
     {
 
     }
+    public function onMudancaSenha()
+    {
+        
+    }
     public function onDelete($param)
     {
         

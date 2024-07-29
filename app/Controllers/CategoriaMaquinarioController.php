@@ -18,7 +18,7 @@ class CategoriaMaquinarioController extends BaseController
     public function listar()
     {
         echo view("layouts/header",[
-            "itens" => $this->categoria_maquinario->orderBy("nome")->paginate(2),
+            "itens" => $this->categoria_maquinario->orderBy("nome")->paginate(10),
             "pager" => $this->categoria_maquinario->pager
         ]);
         echo view("layouts/menuMaster");

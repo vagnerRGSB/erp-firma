@@ -3,7 +3,7 @@
         <div class="col-md-6 w-100">
             <div class="card">
                 <div class="card-body">
-                    <h2 class="card-title text-center">Cadastro Categoria Peça</h2>
+                    <h2 class="card-title text-center">Editar Categoria Peça</h2>
                     <form action="<?= url_to("categoria-peca.onSave") ?>" method="post">
 
                         <div class="mb-3 col-2">

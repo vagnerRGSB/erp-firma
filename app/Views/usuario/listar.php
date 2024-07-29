@@ -1,8 +1,11 @@
-<div class="container bg-light mt-2 mb-2">
-  <div class="mt-1 mb-1">
-    <h1 class="h1">Lista Usuários</h1>
-  </div>
-  <div class="mt-1 mb-1">
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6 w-100">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Listagem de Usuário</h2>
+
+                    <div class="mt-1 mb-1">
     <a class="btn btn-primary" href="#"><i class="bi bi-plus"></i> Usuário</a>
   </div>
   <table class="table">
@@ -27,4 +30,8 @@
   <div class="container">
     <?= $pager->links(); ?>
   </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

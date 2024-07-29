@@ -1,8 +1,11 @@
-<div class="container bg-light mt-2 mb-2">
-  <div class="mt-1 mb-1">
-    <h1 class="h1">Lista Marcas</h1>
-  </div>
-  <div class="mt-1 mb-1">
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6 w-100">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="h2 card-title text-center">Listagem Marca</h2>
+
+                    <div class="mt-1 mb-1">
     <a class="btn btn-primary" href="<?= url_to("marca.inserir") ?>"><i class="bi bi-plus"></i> Marca</a>
   </div>
   <table class="table">
@@ -25,4 +28,9 @@
   <div class="container">
     <?= $pager->links(); ?>
   </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

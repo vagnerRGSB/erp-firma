@@ -22,7 +22,14 @@ class LoginController extends BaseController
     }
     public function onLogin()
     {
+        $validate = $this->validate([
+            "email" => "required|valid_email",
+            "senha" => "required"
+        ]);
 
+        if(!$validate){
+            return redirect()->route("login.tela")->with("errors", $this->validator->getErrors());
+        }
     }
     public function onLogout()
     {

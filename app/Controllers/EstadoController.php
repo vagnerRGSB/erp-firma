@@ -49,6 +49,7 @@ class EstadoController extends BaseController
 
         if($status)
         {
+            session()->setFlashdata("success", " ".$this->request->getPost("nome")." - ".$this->request->getPost("sigla"));
             return redirect()->route("estado.listar");
         }else{
             return redirect()->back();

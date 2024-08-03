@@ -25,7 +25,9 @@ class Auth implements FilterInterface
      */
     public function before(RequestInterface $request, $arguments = null)
     {
-        //
+        if(!session()->has("usuariLogado")){
+            return redirect()->route("login.tela");
+        }
     }
 
     /**

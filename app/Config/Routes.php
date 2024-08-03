@@ -6,6 +6,11 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
+
+ $routes->get("/login/tela-login","LoginController::login",["as"=>"login.tela"]);
+ $routes->post("/login/onLogin","LoginController::onLogin",["as"=>"login.onLogin"]);
+ $routes->get("/login/onLogout","LoginController::onLogout",["as"=>"login.onLogout"]);
+
 $routes->get("/usuario/listar","UsuarioController::listar",["as"=>"usuario.listar"]);
 $routes->get("/usuario/inserir","UsuarioController::inserir",["as"=>"usuario.inserir"]);
 $routes->get("/usuario/editar","UsuarioController::editar",["as"=>"usuario.editar"]);
@@ -46,7 +51,3 @@ $routes->get("/marca/onDelete/(:any)","MarcaController::onDelete/$1",["as"=>"mar
 
 
 $routes->get('/',"Home::home",["as"=>"home"]);
-
-$routes->get("/login/tela-login","LoginController::login",["as"=>"login.tela"]);
-
-

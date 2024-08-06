@@ -9,7 +9,7 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-people"></i> Gestão Sobre
+           Gestão Sobre
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= url_to("categoria-servico.listar") ?>"> <i class="bi bi-list"></i> Lista categorias serviços prestados</a></li>
@@ -22,7 +22,7 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-geo-alt"></i> Sobre Localização
+           Localizações
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= url_to("estado.listar") ?>"><i class="bi bi-list"></i> Lista Estados</a></li>
@@ -33,7 +33,7 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-collection"></i> Sobre Peças
+          Peças
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= url_to("categoria-peca.listar") ?>"> <i class="bi bi-list"></i> Categorias Peças</a></li>
@@ -44,7 +44,7 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="bi bi-gear"></i> Equipamentos
+          Equipamentos
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= url_to("categoria-maquinario.listar") ?>"> <i class="bi bi-list"></i> Lista de categoria Maquinarios</a></li>
@@ -54,11 +54,10 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Ola,
+            Olá, 
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="<?= url_to("login.tela") ?>"> Tela Login</a></li>
-            <li><a class="dropdown-item" href="<?= url_to("usuario.editar") ?>"> Editar meu perfil</a></li>
+            <li><a class="dropdown-item" href="#"> Editar meu perfil</a></li>
             <li><a class="dropdown-item" href="#"> Finalizar seção </a></li>
           </ul>
         </li>

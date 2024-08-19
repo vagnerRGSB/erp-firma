@@ -10,13 +10,17 @@
                         <div class="mb-3 col-6">
                             <label for="nome" class="form-label">Nome Estado</label>
                             <input name="nome" type="text" class="form-control" id="nome" aria-describedby="nomeHelp">
-                            <div id="nomeHelp" class="form-text"></div>
+                            <div id="nomeHelp" class="form-text">
+                                <?= session()->getFlashdata("errors")["nome"] ?? "" ?>
+                            </div>
                         </div>
 
                         <div class="mb-3 col-3">
                             <label for="sigla" class="form-label">Sigla Estado</label>
                             <input name="sigla" type="text" class="form-control" id="sigla" aria-describedby="siglaHelp">
-                            <div id="siglaHelp" class="form-text"></div>
+                            <div id="siglaHelp" class="form-text">
+                                <?= session()->getFlashdata("errors")["sigla"] ?? "" ?>
+                            </div>
                         </div>
 
 

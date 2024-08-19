@@ -29,6 +29,8 @@ class LoginController extends BaseController
 
         if(!$validate){
             return redirect()->route("login.tela")->with("errors", $this->validator->getErrors());
+        }else{
+            
         }
     }
     public function onLogout()

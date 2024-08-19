@@ -28,8 +28,15 @@ class EstadoModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
-    protected $validationMessages   = [];
+    protected $validationRules      = [
+        "nome"  => "required|min_length[3]|max_length[150]",
+        "sigla" => "required|min_length[2]|max_length[2]|is_unique[estado.sigla]"
+    ];
+    protected $validationMessages   = [
+        "sigla" => [
+            "is_unique" => "Já temos um registro relacionado à seguinte sigla"
+        ]
+    ];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 

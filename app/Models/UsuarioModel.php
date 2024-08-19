@@ -15,8 +15,7 @@ class UsuarioModel extends Model
     protected $allowedFields    = [
         "nome",
         "email",
-        "senha",
-        "confirme_senha"
+        "senha"
     ];
 
     protected bool $allowEmptyInserts = false;
@@ -26,26 +25,37 @@ class UsuarioModel extends Model
     protected array $castHandlers = [];
 
     // Dates
-    protected $useTimestamps = true;
+    protected $useTimestamps = false;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
+    protected $validationRules      = [
+        "nome" => "required|min_length[3]|max_length[150]",
+        "email" => "required|min_length[3]|max_length[150]|valid_email",
+        "senha" => "required|max_length[255]"
+    ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 
     // Callbacks
     protected $allowCallbacks = true;
-    protected $beforeInsert   = [];
+    protected $beforeInsert   = ["hashSenha"];
     protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
+    protected $beforeUpdate   = ["hashSenha"];
     protected $afterUpdate    = [];
     protected $beforeFind     = [];
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+
+    public function hashSenha(array $data)
+    {
+        $data["data"]["senha"] = password_hash($data["data"]["senha"], PASSWORD_DEFAULT);
+        return $data;
+    }
 }

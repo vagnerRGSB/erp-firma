@@ -11,11 +11,11 @@ use CodeIgniter\Router\RouteCollection;
  $routes->post("/login/onLogin","LoginController::onLogin",["as"=>"login.onLogin"]);
  $routes->get("/login/onLogout","LoginController::onLogout",["as"=>"login.onLogout"]);
 
-$routes->get("/usuario/listar","UsuarioController::listar",["as"=>"usuario.listar","filter"=>"auth"]);
-$routes->get("/usuario/inserir","UsuarioController::inserir",["as"=>"usuario.inserir","filter"=>"auth"]);
-$routes->get("/usuario/editar","UsuarioController::editar",["as"=>"usuario.editar","filter"=>"auth"]);
-$routes->post("/usuario/onSave","UsuarioController::onSave",["as"=>"usuario.onSave","filter"=>"auth"]);
-$routes->get("/usuario/onDelete/(:num)","UsuarioController::onDelete",["as"=>"usuario.onDelete","filter"=>"auth"]);
+$routes->get("/usuario/listar","UsuarioController::listar",["as"=>"usuario.listar"]);
+$routes->get("/usuario/inserir","UsuarioController::inserir",["as"=>"usuario.inserir"]);
+$routes->get("/usuario/editar/(:num)","UsuarioController::editar/$1",["as"=>"usuario.editar"]);
+$routes->post("/usuario/onSave","UsuarioController::onSave",["as"=>"usuario.onSave"]);
+$routes->get("/usuario/onDelete/(:num)","UsuarioController::onDelete/$1",["as"=>"usuario.onDelete"]);
 
 
 $routes->get("/categoria-servico/listar","CategoriaServicoController::listar",["as"=>"categoria-servico.listar","filter"=>"auth"]);

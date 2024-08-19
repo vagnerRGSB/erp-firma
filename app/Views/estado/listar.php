@@ -3,7 +3,7 @@
     <div class="col-md-6 w-100">
       <?php if (session()->has("success")) : ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-          <strong>Cadastro Realizado Sucesso:</strong><?= session()->getFlashdata("success") ?>
+          <strong>Cadastro ou atualização realizado com Sucesso:</strong><?= session()->getFlashdata("success") ?>
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       <?php endif; ?>

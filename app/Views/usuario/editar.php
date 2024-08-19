@@ -21,11 +21,11 @@
 
                         <div class="row">
                             <div class="mb-3 col-6">
-                                <label for="password" class="form-label">Senha</label>
+                                <label for="password" class="form-label">Senha nova</label>
                                 <input type="password" class="form-control" id="senha" name="senha" required>
                             </div>
                             <div class="mb-3 col-6">
-                                <label for="confirmaSenha" class="form-label">Confirme a Senha</label>
+                                <label for="confirmaSenha" class="form-label">Confirme a senha nova</label>
                                 <input type="password" class="form-control" id="confirmPassword" name="confirmaSenha" required>
                             </div>
                         </div>

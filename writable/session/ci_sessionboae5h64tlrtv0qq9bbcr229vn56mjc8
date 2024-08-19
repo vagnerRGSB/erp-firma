@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1724018011;_ci_previous_url|s:36:"http://localhost:8080/estado/inserir";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:4:"nome";s:0:"";s:5:"sigla";s:0:"";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:6:"errors";s:3:"old";}errors|a:2:{s:4:"nome";s:26:"O campo nome é requerido.";s:5:"sigla";s:27:"O campo sigla é requerido.";}

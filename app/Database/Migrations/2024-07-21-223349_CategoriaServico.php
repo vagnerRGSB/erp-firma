@@ -35,6 +35,6 @@ class CategoriaServico extends Migration
 
     public function down()
     {
-        $this->forge->dropTable("categoria_servico");
+        $this->forge->dropTable("categoria_servico",true,true);
     }
 }

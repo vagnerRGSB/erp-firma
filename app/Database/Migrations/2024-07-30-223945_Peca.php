@@ -44,6 +44,6 @@ class Peca extends Migration
 
     public function down()
     {
-        $this->forge->dropTable("peca");
+        $this->forge->dropTable("peca",true,true);
     }
 }

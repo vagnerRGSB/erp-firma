@@ -58,13 +58,13 @@ class InscricaoCliente extends Migration
         $this->forge->addPrimaryKey("idInscricao");
         $this->forge->addForeignKey("idLocalidade","localidade","idLocalidade","cascade","cascade",
         "fk_localidade_has_inscricao");
-        $this->forge->addForeignKey("idClinete","cliente","idCliente","cascade","cascade",
+        $this->forge->addForeignKey("idCliente","cliente","idCliente","cascade","cascade",
         "fk_cliente_has_localidade");
         $this->forge->createTable("inscricao_cliente",true,["engine"=>"InnoDB"]);
     }
 
     public function down()
     {
-        $this->forge->dropTable("inscricao_localidade",true,true);
+        $this->forge->dropTable("inscricao_cliente",true,true);
     }
 }

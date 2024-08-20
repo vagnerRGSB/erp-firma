@@ -11,11 +11,11 @@ use CodeIgniter\Router\RouteCollection;
  $routes->post("/login/onLogin","LoginController::onLogin",["as"=>"login.onLogin"]);
  $routes->get("/login/onLogout","LoginController::onLogout",["as"=>"login.onLogout"]);
 
-$routes->get("/usuario/listar","UsuarioController::listar",["as"=>"usuario.listar"]);
-$routes->get("/usuario/inserir","UsuarioController::inserir",["as"=>"usuario.inserir"]);
-$routes->get("/usuario/editar/(:num)","UsuarioController::editar/$1",["as"=>"usuario.editar"]);
-$routes->post("/usuario/onSave","UsuarioController::onSave",["as"=>"usuario.onSave"]);
-$routes->get("/usuario/onDelete/(:num)","UsuarioController::onDelete/$1",["as"=>"usuario.onDelete"]);
+$routes->get("/usuario/listar","UsuarioController::listar",["as"=>"usuario.listar","filter"=>"auth"]);
+$routes->get("/usuario/inserir","UsuarioController::inserir",["as"=>"usuario.inserir","filter"=>"auth"]);
+$routes->get("/usuario/editar/(:num)","UsuarioController::editar/$1",["as"=>"usuario.editar","filter"=>"auth"]);
+$routes->post("/usuario/onSave","UsuarioController::onSave",["as"=>"usuario.onSave","filter"=>"auth"]);
+$routes->get("/usuario/onDelete/(:num)","UsuarioController::onDelete/$1",["as"=>"usuario.onDelete","filter"=>"auth"]);
 
 
 $routes->get("/categoria-servico/listar","CategoriaServicoController::listar",["as"=>"categoria-servico.listar","filter"=>"auth"]);
@@ -25,11 +25,11 @@ $routes->post("/categoria-servico/onSave","CategoriaServicoController::onSave",[
 $routes->get("/categoria-servico/onDelete/(:num)","CategoriaServicoController::onDelete/$1",["as"=>"categoria-servico.onDelete","filter"=>"auth"]);
 
 
-$routes->get("/estado/listar","EstadoController::listar",["as"=>"estado.listar"]);
-$routes->get("/estado/inserir","EstadoController::inserir",["as"=>"estado.inserir"]);
-$routes->get("/estado/editar/(:any)","EstadoController::editar/$1",["as"=>"estado.editar/$1"]);
-$routes->post("/estado/onSave","EstadoController::onSave",["as"=>"estado.onSave"]);
-$routes->get("/estado/onDelete/(:any)","EstadoController::onDelete/$1",["as"=>"estado.onDelete"]);
+$routes->get("/estado/listar","EstadoController::listar",["as"=>"estado.listar","filter"=>"auth"]);
+$routes->get("/estado/inserir","EstadoController::inserir",["as"=>"estado.inserir","filter"=>"auth"]);
+$routes->get("/estado/editar/(:any)","EstadoController::editar/$1",["as"=>"estado.editar/$1","filter"=>"auth"]);
+$routes->post("/estado/onSave","EstadoController::onSave",["as"=>"estado.onSave","filter"=>"auth"]);
+$routes->get("/estado/onDelete/(:any)","EstadoController::onDelete/$1",["as"=>"estado.onDelete","filter"=>"auth"]);
 
 $routes->get("/categoria-peca/listar","CategoriaPecaController::listar",["as"=>"categoria-peca.listar","filter"=>"auth"]);
 $routes->get("/categoria-peca/inserir","CategoriaPecaController::inserir",["as"=>"categoria-peca.inserir","filter"=>"auth"]);
@@ -50,4 +50,4 @@ $routes->post("/marca/onSave","MarcaController::onSave",["as"=>"marca.onSave","f
 $routes->get("/marca/onDelete/(:any)","MarcaController::onDelete/$1",["as"=>"marca.onDelete","filter"=>"auth"]);
 
 
-$routes->get('/',"Home::home",["as"=>"home"]);
+$routes->get('/',"Home::home",["as"=>"home","filter=>auth"]);

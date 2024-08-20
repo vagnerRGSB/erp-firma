@@ -30,6 +30,6 @@ class CategoriaMaquinario extends Migration
 
     public function down()
     {
-        $this->forge->dropTable("categoria_maquinario");
+        $this->forge->dropTable("categoria_maquinario",true,true);
     }
 }

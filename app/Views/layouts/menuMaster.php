@@ -54,11 +54,13 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Olá, 
+            Olá,<?php if(session()->has("logado")): ?>
+                <?= session()->get("logado")["nome"] ?>
+            <?php endif; ?>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="#"> Editar meu perfil</a></li>
-            <li><a class="dropdown-item" href="#"> Finalizar seção </a></li>
+            <li><a class="dropdown-item" href="<?= url_to("login.onLogout") ?>"> Finalizar seção </a></li>
           </ul>
         </li>
 

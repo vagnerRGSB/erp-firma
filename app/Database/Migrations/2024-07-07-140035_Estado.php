@@ -36,6 +36,6 @@ class Estado extends Migration
 
     public function down()
     {
-        $this->forge->dropTable("estado");
+        $this->forge->dropTable("estado",true,true);
     }
 }

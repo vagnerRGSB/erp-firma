@@ -31,6 +31,6 @@ class CategoriaPeca extends Migration
 
     public function down()
     {
-        $this->forge->dropTable("categoria_peca");
+        $this->forge->dropTable("categoria_peca",true,true);
     }
 }

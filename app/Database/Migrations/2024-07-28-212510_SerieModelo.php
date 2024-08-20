@@ -39,6 +39,6 @@ class SerieModelo extends Migration
 
     public function down()
     {
-        $this->forge->dropTable("serie_modelo");
+        $this->forge->dropTable("serie_modelo",true,true);
     }
 }

@@ -41,6 +41,6 @@ class Localidade extends Migration
 
     public function down()
     {
-        $this->forge->dropTable("localidade");
+        $this->forge->dropTable("localidade",true,true);
     }
 }

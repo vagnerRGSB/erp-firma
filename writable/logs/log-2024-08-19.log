@@ -769,3 +769,57 @@ INFO - 2024-08-19 20:14:50 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-08-19 20:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-08-19 20:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-08-19 20:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-08-19 21:01:39 --> mysqli_sql_exception: Unknown table 'erp_firma.especificacao' in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('DROP TABLE `esp...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `esp...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `esp...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\Forge.php(663): CodeIgniter\Database\BaseConnection->query('DROP TABLE `esp...')
+#4 C:\xampp\htdocs\erp-firma\app\Database\Migrations\2024-07-28-214256_Especificacao.php(41): CodeIgniter\Database\Forge->dropTable('especificacao')
+#5 C:\xampp\htdocs\erp-firma\system\Database\MigrationRunner.php(867): App\Database\Migrations\Especificacao->down()
+#6 C:\xampp\htdocs\erp-firma\system\Database\MigrationRunner.php(290): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\xampp\htdocs\erp-firma\system\Commands\Database\MigrateRollback.php(87): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 C:\xampp\htdocs\erp-firma\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\xampp\htdocs\erp-firma\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\xampp\htdocs\erp-firma\system\Commands\Database\MigrateRefresh.php(86): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 C:\xampp\htdocs\erp-firma\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\xampp\htdocs\erp-firma\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\xampp\htdocs\erp-firma\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#14 C:\xampp\htdocs\erp-firma\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 C:\xampp\htdocs\erp-firma\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+INFO - 2024-08-19 21:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:15:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:20:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:25:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-19 21:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-19 21:43:33 --> ValueError: hash(): Argument #1 ($algo) must be a valid hashing algorithm
+[Method: POST, Route: login/onLogin]
+in APPPATH\Controllers\LoginController.php on line 36.
+ 1 APPPATH\Controllers\LoginController.php(36): hash('123', '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->onLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')

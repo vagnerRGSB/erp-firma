@@ -42,6 +42,6 @@ class ModeloMaquinario extends Migration
 
     public function down()
     {
-        $this->forge->dropTable("modelo_maquinario");
+        $this->forge->dropTable("modelo_maquinario",true,true);
     }
 }

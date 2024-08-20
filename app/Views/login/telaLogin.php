@@ -84,16 +84,25 @@
 
 <body>
     <div class="login-container">
-        <form class="login-form" action="<?php echo url_to("login.onLogin") ?>" method="post">
+        <form class="login-form" action="<?= url_to("login.onLogin") ?>" method="post">
             <h2>Login</h2>
             <div>
-                <label class="form-label" for="email">E-mail:</label>
+                <?php if(session()->has("error_login")): ?>
+                    <span class="text text-danger">
+                        <?= session()->getFlashdata("error_login") ?>
+                    </span>
+                <?php endif; ?>
+            </div>
+            <div>
+                <label class="form-label" for="email">E-mail</label>
                 <input class="form-control" type="text" id="email" name="email">
+               <span class="text text-danger"><?= session()->getFlashdata("errors")["email"] ?? "" ?></span>
             </div>
 
             <div>
-                <label class="form-label" for="password">Senha:</label>
+                <label class="form-label" for="password">Senha</label>
                 <input class="form-control" type="password" id="senha" name="senha">
+                <span class="text text-danger"> <?= session()->getFlashdata("errors")["senha"] ?? "" ?></span>
             </div>
 
 

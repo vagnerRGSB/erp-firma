@@ -50,4 +50,4 @@ $routes->post("/marca/onSave","MarcaController::onSave",["as"=>"marca.onSave","f
 $routes->get("/marca/onDelete/(:any)","MarcaController::onDelete/$1",["as"=>"marca.onDelete","filter"=>"auth"]);
 
 
-$routes->get('/',"Home::home",["as"=>"home","filter=>auth"]);
+$routes->get('/',"Home::home",["as"=>"home","filter"=>"auth"]);

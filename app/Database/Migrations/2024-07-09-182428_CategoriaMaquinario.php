@@ -25,11 +25,11 @@ class CategoriaMaquinario extends Migration
             ]
         );
         $this->forge->addPrimaryKey("idCategoriaMaquinario");
-        $this->forge->createTable("categoria_maquinario",true,["engine"=>"InnoDB"]);
+        $this->forge->createTable("categoria_maquinario", true, ["engine" => "InnoDB"]);
     }
 
     public function down()
     {
-        $this->forge->dropTable("categoria_maquinario",true,true);
+        $this->forge->dropTable("categoria_maquinario", true, true);
     }
 }

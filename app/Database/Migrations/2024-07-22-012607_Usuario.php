@@ -9,37 +9,37 @@ class Usuario extends Migration
     public function up()
     {
         $this->forge->addField([
-            "idUsuario"=>
+            "idUsuario" =>
             [
-                "type"=>"int",
-                "constraint"=>5,
-                "unsigned"=>true,
-                "auto_increment"=>true
+                "type" => "int",
+                "constraint" => 5,
+                "unsigned" => true,
+                "auto_increment" => true
             ],
-            "nome"=>
+            "nome" =>
             [
-                "type"=>"varchar",
-                "constraint"=>200
+                "type" => "varchar",
+                "constraint" => 200
             ],
-            "email"=>
+            "email" =>
             [
-                "type"=>"varchar",
-                "constraint"=>200,
-                "unique"=>true
+                "type" => "varchar",
+                "constraint" => 200,
+                "unique" => true
             ],
-            "senha"=>
+            "senha" =>
             [
-                "type"=>"varchar",
-                "constraint"=>300
+                "type" => "varchar",
+                "constraint" => 300
             ]
-            ]);
+        ]);
 
-            $this->forge->addPrimaryKey("idUsuario");
-            $this->forge->createTable("usuario",true,["engine"=>"InnoDB"]);
+        $this->forge->addPrimaryKey("idUsuario");
+        $this->forge->createTable("usuario", true, ["engine" => "InnoDB"]);
     }
 
     public function down()
     {
-        $this->forge->dropTable("usuario",true,true);
+        $this->forge->dropTable("usuario", true, true);
     }
 }

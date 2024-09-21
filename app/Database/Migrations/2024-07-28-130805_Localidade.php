@@ -9,38 +9,44 @@ class Localidade extends Migration
     public function up()
     {
         $this->forge->addField([
-            "idLocalidade"=>
+            "idLocalidade" =>
             [
-                "type"=>"int",
-                "constraint"=>5,
-                "unsigned"=>true,
-                "auto_increment"=>true
+                "type" => "int",
+                "constraint" => 5,
+                "unsigned" => true,
+                "auto_increment" => true
             ],
-            "nome"=>[
-                "type"=>"varchar",
-                "constraint"=>150
+            "nome" => [
+                "type" => "varchar",
+                "constraint" => 150
             ],
-            "cep"=>
+            "cep" =>
             [
-                "type"=>"varchar",
-                "constraint"=>8,
+                "type" => "varchar",
+                "constraint" => 8,
             ],
-            "idCidade"=>
+            "idCidade" =>
             [
-                "type"=>"int",
-                "constraint"=>5,
-                "unsigned"=>true
+                "type" => "int",
+                "constraint" => 5,
+                "unsigned" => true
             ]
-            ]);
-            $this->forge->addPrimaryKey("idLocalidade");
-            $this->forge->addUniqueKey("cep");
-            $this->forge->addForeignKey("idCidade","cidade","idCidade","cascade","cascade",
-            "fk_localidade_has_cidade");
-            $this->forge->createTable("localidade",true,["engine"=>"InnoDB"]);
+        ]);
+        $this->forge->addPrimaryKey("idLocalidade");
+        $this->forge->addUniqueKey("cep");
+        $this->forge->addForeignKey(
+            "idCidade",
+            "cidade",
+            "idCidade",
+            "cascade",
+            "cascade",
+            "fk_localidade_has_cidade"
+        );
+        $this->forge->createTable("localidade", true, ["engine" => "InnoDB"]);
     }
 
     public function down()
     {
-        $this->forge->dropTable("localidade",true,true);
+        $this->forge->dropTable("localidade", true, true);
     }
 }

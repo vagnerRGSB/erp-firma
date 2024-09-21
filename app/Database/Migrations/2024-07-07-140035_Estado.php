@@ -10,32 +10,32 @@ class Estado extends Migration
     {
         $this->forge->addField(
             [
-                "idEstado"=>
+                "idEstado" =>
                 [
-                    "type"=>"int",
-                    "constraint"=>5,
-                    "unsigned"=>true,
-                    "auto_increment"=>true
+                    "type" => "int",
+                    "constraint" => 5,
+                    "unsigned" => true,
+                    "auto_increment" => true
                 ],
-                "nome"=>
+                "nome" =>
                 [
-                    "type"=>"varchar",
-                    "constraint"=>200,
+                    "type" => "varchar",
+                    "constraint" => 200,
                 ],
-                "sigla"=>
+                "sigla" =>
                 [
-                    "type"=>"varchar",
-                    "constraint"=>"2",
-                    "unique"=>true
+                    "type" => "varchar",
+                    "constraint" => "2",
+                    "unique" => true
                 ]
             ]
-            );
-            $this->forge->addPrimaryKey("idEstado");
-            $this->forge->createTable("estado",true,["engine"=>"InnoDB"]);
+        );
+        $this->forge->addPrimaryKey("idEstado");
+        $this->forge->createTable("estado", true, ["engine" => "InnoDB"]);
     }
 
     public function down()
     {
-        $this->forge->dropTable("estado",true,true);
+        $this->forge->dropTable("estado", true, true);
     }
 }

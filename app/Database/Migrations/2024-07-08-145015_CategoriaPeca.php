@@ -12,25 +12,25 @@ class CategoriaPeca extends Migration
             [
                 "idCategoriaPeca" =>
                 [
-                    "type"=>"int",
-                    "constraint"=>5,
-                    "unsigned"=>true,
-                    "auto_increment"=>true
+                    "type" => "int",
+                    "constraint" => 5,
+                    "unsigned" => true,
+                    "auto_increment" => true
                 ],
-                "nome" => 
+                "nome" =>
                 [
-                    "type"=>"varchar",
-                    "constraint"=>200
+                    "type" => "varchar",
+                    "constraint" => 200
                 ]
             ]
-                );
+        );
 
-                $this->forge->addPrimaryKey("idCategoriaPeca");
-                $this->forge->createTable("categoria_peca",true,["engine"=>"InnoDB"]);
+        $this->forge->addPrimaryKey("idCategoriaPeca");
+        $this->forge->createTable("categoria_peca", true, ["engine" => "InnoDB"]);
     }
 
     public function down()
     {
-        $this->forge->dropTable("categoria_peca",true,true);
+        $this->forge->dropTable("categoria_peca", true, true);
     }
 }

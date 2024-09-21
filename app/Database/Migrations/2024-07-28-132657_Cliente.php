@@ -9,65 +9,71 @@ class Cliente extends Migration
     public function up()
     {
         $this->forge->addField([
-            "idCliente"=>
+            "idCliente" =>
             [
-                "type"=>"int",
-                "constraint"=>5,
-                "unsigned"=>true,
+                "type" => "int",
+                "constraint" => 5,
+                "unsigned" => true,
                 "auto_increment"
             ],
-            "categoria"=>
+            "categoria" =>
             [
-                "type"=>"varchar",
-                "constraint"=>1,
+                "type" => "varchar",
+                "constraint" => 1,
             ],
-            "nome"=>
+            "nome" =>
             [
-                "type"=>"varchar",
-                "constraint"=>150,
+                "type" => "varchar",
+                "constraint" => 150,
             ],
-            "cpfCnpj"=>
+            "cpfCnpj" =>
             [
-                "type"=>"varchar",
-                "constraint"=>15,
-                "unique"=>true
+                "type" => "varchar",
+                "constraint" => 15,
+                "unique" => true
             ],
-            "logradouro"=>[
-                "type"=>"varchar",
-                "constraint"=>200
+            "logradouro" => [
+                "type" => "varchar",
+                "constraint" => 200
             ],
-            "numLogradouro"=>
+            "numLogradouro" =>
             [
-                "type"=>"int",
-                "constraint"=>5
+                "type" => "int",
+                "constraint" => 5
             ],
-            "complemento"=>
+            "complemento" =>
             [
-                "type"=>"varchar",
-                "constraint"=>200,
-                "null"=>true
+                "type" => "varchar",
+                "constraint" => 200,
+                "null" => true
             ],
-            "email"=>
+            "email" =>
             [
-                "type"=>"varchar",
-                "constraint"=>150,
-                "unique"=>true
+                "type" => "varchar",
+                "constraint" => 150,
+                "unique" => true
             ],
-            "idLocalidade"=>
+            "idLocalidade" =>
             [
-                "type"=>"int",
-                "constraint"=>5,
-                "unsigned"=>true
+                "type" => "int",
+                "constraint" => 5,
+                "unsigned" => true
             ]
-            ]);
-            $this->forge->addPrimaryKey("idCliente");
-            $this->forge->addForeignKey("idLocalidade","localidade","idLocalidade","cascade","cascade",
-            "fk_localidade_has_cliente");
-            $this->forge->createTable("cliente");
+        ]);
+        $this->forge->addPrimaryKey("idCliente");
+        $this->forge->addForeignKey(
+            "idLocalidade",
+            "localidade",
+            "idLocalidade",
+            "cascade",
+            "cascade",
+            "fk_localidade_has_cliente"
+        );
+        $this->forge->createTable("cliente");
     }
 
     public function down()
     {
-        $this->forge->dropTable("cliente",true,true);
+        $this->forge->dropTable("cliente", true, true);
     }
 }

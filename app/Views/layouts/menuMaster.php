@@ -59,7 +59,7 @@
             <?php endif; ?>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#"> Editar meu perfil</a></li>
+            <li><a class="dropdown-item" href="<?= url_to("usuario.editarMeuPerfil") ?>"> Editar meu perfil</a></li>
             <li><a class="dropdown-item" href="<?= url_to("login.onLogout") ?>"> Finalizar seção </a></li>
           </ul>
         </li>

@@ -41,6 +41,7 @@ class LoginController extends BaseController
             }
 
             unset($usuario_login["senha"]);
+            unset($usuario_login["email"]);
             session()->set("logado",$usuario_login);
 
             return redirect()->route("home");

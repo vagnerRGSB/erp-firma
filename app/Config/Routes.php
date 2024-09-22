@@ -13,9 +13,12 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get("/usuario/listar","UsuarioController::listar",["as"=>"usuario.listar","filter"=>"auth"]);
 $routes->get("/usuario/inserir","UsuarioController::inserir",["as"=>"usuario.inserir","filter"=>"auth"]);
-$routes->get("/usuario/editar/(:num)","UsuarioController::editar/$1",["as"=>"usuario.editar","filter"=>"auth"]);
+$routes->get("/usuario/editar/(:num)","UsuarioController::editar/$1",["as"=>"usuario.editarUsuario",
+"filter"=>"auth"]);
 $routes->post("/usuario/onSave","UsuarioController::onSave",["as"=>"usuario.onSave","filter"=>"auth"]);
 $routes->get("/usuario/onDelete/(:num)","UsuarioController::onDelete/$1",["as"=>"usuario.onDelete","filter"=>"auth"]);
+$routes->get("/usuario/editarMeuPerfil","UsuarioController::editarMeuPerfil",["as"=>"usuario.editarMeuPerfil",
+"filter"=>"auth"]);
 
 
 $routes->get("/categoria-servico/listar","CategoriaServicoController::listar",["as"=>"categoria-servico.listar","filter"=>"auth"]);

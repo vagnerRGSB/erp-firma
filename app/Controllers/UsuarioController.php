@@ -18,7 +18,7 @@ class UsuarioController extends BaseController
     {
         $id = [session("logado")["idUsuario"]];
         echo view("layouts/header", [
-            "itens" => $this->usuario->whereNotIn("idUsuario",$id)->orderBy("nome")->paginate(10),
+            "itens" => $this->usuario->whereNotIn("idUsuario", $id)->orderBy("nome")->paginate(10),
             "pager" => $this->usuario->pager
         ]);
         echo view("layouts/menuMaster");
@@ -35,12 +35,22 @@ class UsuarioController extends BaseController
     public function editar($param)
     {
         echo view("layouts/header", [
-            "item" => $this->usuario->find($param)
+            "itens" => $this->usuario->find($param)
         ]);
         echo view("layouts/menuMaster");
         echo view("usuario/editar");
         echo view("layouts/footer");
     }
+    public function editarMeuPerfil()
+    {        
+        echo view("layouts/header",[
+            "itens"=> $this->usuario->select("idUsuario,nome,email,senha")->find(session("logado")["idUsuario"])
+        ]);
+        echo view("layouts/menuMaster");
+        echo view("usuario/editar");
+        echo view("layouts/footer");
+    }
+
     public function onSave()
     {
         $resultado = $this->usuario->save($this->request->getPost());
@@ -55,6 +65,11 @@ class UsuarioController extends BaseController
                 $this->usuario->errors()
             );
         }
+    }
+
+    public function onSaveMeuPerfil()
+    {
+
     }
     public function onDelete($param)
     {

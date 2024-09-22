@@ -29,12 +29,15 @@ class EstadoModel extends Model
 
     // Validation
     protected $validationRules      = [
-        "nome"  => "required|min_length[3]|max_length[150]",
+        "nome"  => "required|min_length[3]|max_length[150]|is_unique[estado.nome]",
         "sigla" => "required|min_length[2]|max_length[2]|is_unique[estado.sigla]"
     ];
     protected $validationMessages   = [
+        "nome"=>[
+            "is_unique"=>"Já contém um registro relacionado ao nome do estado"
+        ],
         "sigla" => [
-            "is_unique" => "Já temos um registro relacionado à seguinte sigla"
+            "is_unique" => "Já contém um registro relacionado à seguinte sigla"
         ]
     ];
     protected $skipValidation       = false;

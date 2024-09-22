@@ -27,7 +27,7 @@
               <tr>
                 <th class="text-start mb-1 col"><?= $item["nome"] ?></th>
                 <th class="text-start mb-1 col"><?= $item["email"] ?></th>
-                <th class="text-end mb-1 col g-2">
+                <th class="text-end mb-1 col">
                   <a class="btn btn-warning mb-1 lg-3" href="<?= base_url("usuario/editar/".$item["idUsuario"])?>"> <i class="bi bi-pen"></i> Editar</a>
                   <a class="btn btn-danger mb-1 lg-3" href="<?= base_url("usuario/onDelete/".$item["idUsuario"])?>"> <i class="bi bi-trash"></i> Excluir</a>
                 </th>

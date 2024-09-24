@@ -9,7 +9,7 @@ class UsuarioModel extends Model
     protected $table            = 'usuario';
     protected $primaryKey       = 'idUsuario';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'object';
+    protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = [
@@ -58,4 +58,6 @@ class UsuarioModel extends Model
         $data["data"]["senha"] = password_hash($data["data"]["senha"], PASSWORD_DEFAULT);
         return $data;
     }
+
+    
 }

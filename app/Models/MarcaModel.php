@@ -9,7 +9,7 @@ class MarcaModel extends Model
     protected $table            = 'marca';
     protected $primaryKey       = 'idMarca';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'object';
+    protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ["nome"];

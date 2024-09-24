@@ -9,7 +9,7 @@ class EstadoModel extends Model
     protected $table            = 'estado';
     protected $primaryKey       = 'idEstado';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'object';
+    protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ["nome","sigla"];

@@ -9,7 +9,7 @@ class CategoriaMaquinarioModel extends Model
     protected $table            = 'categoria_maquinario';
     protected $primaryKey       = 'idCategoriaMaquinario';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'object';
+    protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ["nome"];

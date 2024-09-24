@@ -1,0 +1,293 @@
+INFO - 2024-09-24 11:44:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-24 11:44:40 --> mysqli_sql_exception: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`' in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT `ma`.`no...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ma`.`no...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ma`.`no...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT `ma`.`no...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\app\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+#6 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+#7 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-24 11:44:40 --> CodeIgniter\Database\Exceptions\DatabaseException: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+[Method: GET, Route: modelo-maquinario/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT `ma`.`nome`, `cm`.`nome`, `mm`.`nome`
+FROM `modelo_maquinario` `mm`
+INNER JOIN `categoria_maquinario` `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 2 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-09-24 11:44:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ma`.`nome`, `cm`.`nome`, `mm`.`nome`
+FROM `modelo_maquinario` `mm`
+INNER JOIN `categoria_maquinario` `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` `ma` ON ma.idMarca - mm.idMarca')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ma`.`nome`, `cm`.`nome`, `mm`.`nome`
+FROM `modelo_maquinario` `mm`
+INNER JOIN `categoria_maquinario` `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` `ma` ON ma.idMarca - mm.idMarca')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT `ma`.`nome`, `cm`.`nome`, `mm`.`nome`
+FROM `modelo_maquinario` `mm`
+INNER JOIN `categoria_maquinario` `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 4 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-09-24 11:44:40 --> [Caused by] mysqli_sql_exception: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT `ma`.`nome`, `cm`.`nome`, `mm`.`nome`
+FROM `modelo_maquinario` `mm`
+INNER JOIN `categoria_maquinario` `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` `ma` ON ma.idMarca - mm.idMarca', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ma`.`nome`, `cm`.`nome`, `mm`.`nome`
+FROM `modelo_maquinario` `mm`
+INNER JOIN `categoria_maquinario` `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` `ma` ON ma.idMarca - mm.idMarca')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ma`.`nome`, `cm`.`nome`, `mm`.`nome`
+FROM `modelo_maquinario` `mm`
+INNER JOIN `categoria_maquinario` `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` `ma` ON ma.idMarca - mm.idMarca')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT `ma`.`nome`, `cm`.`nome`, `mm`.`nome`
+FROM `modelo_maquinario` `mm`
+INNER JOIN `categoria_maquinario` `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 5 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-24 11:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-24 11:46:10 --> mysqli_sql_exception: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`' in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\app\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+#6 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+#7 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-24 11:46:10 --> CodeIgniter\Database\Exceptions\DatabaseException: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+[Method: GET, Route: modelo-maquinario/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 2 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-09-24 11:46:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 4 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-09-24 11:46:10 --> [Caused by] mysqli_sql_exception: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 5 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-24 11:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-24 11:46:12 --> mysqli_sql_exception: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`' in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:310
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\app\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+#6 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+#7 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-09-24 11:46:12 --> CodeIgniter\Database\Exceptions\DatabaseException: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+[Method: GET, Route: modelo-maquinario/listar]
+in SYSTEMPATH\Database\BaseConnection.php on line 686.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 2 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-09-24 11:46:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 315.
+ 1 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 4 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+CRITICAL - 2024-09-24 11:46:12 --> [Caused by] mysqli_sql_exception: BIGINT UNSIGNED value is out of range in '`erp_firma`.`ma`.`idMarca` - `erp_firma`.`mm`.`idMarca`'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(310): mysqli->query('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `modelo_maquinario` as `mm`
+INNER JOIN `categoria_maquinario` as `cm` ON `cm`.`idCategoriaMaquinario` = `mm`.`idCategoriaMaquinario`
+INNER JOIN `marca` as `ma` ON ma.idMarca - mm.idMarca', [], false)
+ 5 APPPATH\Controllers\ModeloMaquinarioController.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-24 11:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 11:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:06:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 12:06:58 --> Error: Call to a member function links() on null
+[Method: GET, Route: modelo-maquinario/listar]
+in APPPATH\Views\modelo-maquinario\listar.php on line 33.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('modelo-maquinario/listar', [], true)
+ 4 APPPATH\Controllers\ModeloMaquinarioController.php(46): view('modelo-maquinario/listar')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ModeloMaquinarioController->listar()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ModeloMaquinarioController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-24 12:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-24 12:10:26 --> Error: Cannot use object of type App\Models\MarcaModel as array
+[Method: POST, Route: marca/onSave]
+in APPPATH\Controllers\MarcaController.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MarcaController->onSave()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MarcaController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-24 12:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-24 12:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -47,7 +47,7 @@ class MarcaController extends BaseController
         $resultado = $this->marca->save($this->request->getPost());
 
         if ($resultado) {
-            return redirect()->route("marca.listar")->withInput()->with("success",$this->marca["nome"]);
+            return redirect()->route("marca.listar")->withInput()->with("success",$this->request->getPost("nome"));
         } else {
             return redirect()->route("marca.inserir")->withInput()->with("errors",$this->marca->errors());
         }

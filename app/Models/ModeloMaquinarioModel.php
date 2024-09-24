@@ -9,7 +9,7 @@ class ModeloMaquinarioModel extends Model
     protected $table            = 'modelo_maquinario';
     protected $primaryKey       = 'idModeloMaquinario';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ["nome","idCategoriaMaquinario","idMarca"];
@@ -28,11 +28,7 @@ class ModeloMaquinarioModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [
-        "nome" => "required|max_leght[200]|min_leght[3]",
-        "idCategoriaMaquinario"=>"required",
-        "idMarca"=>"required"
-    ];
+    protected $validationRules      = [];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;

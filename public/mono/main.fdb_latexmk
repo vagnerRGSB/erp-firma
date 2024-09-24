@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1726672206.50485 "c:/xampp/htdocs/erp-firma/public/mono/main.tex" "main.pdf" "main" 1726672207.69826 2
+["pdflatex"] 1727008203.43564 "c:/xampp/htdocs/erp-firma/public/mono/main.tex" "main.pdf" "main" 1727008204.67287 2
   "C:/Users/vagne/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1726670912 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/vagne/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0800.pk" 1726670595 19080 f934221c0f595b24ad91a00d3d014e65 ""
   "C:/Users/vagne/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1726588648 28440 92236203ee8aa03399b2874e9f4e1f01 ""
@@ -94,9 +94,9 @@
   "C:/Users/vagne/AppData/Local/Programs/MiKTeX/tex/latex/wallpaper/wallpaper.sty" 1145608440 6919 f87ec89c767393dfb3b9adfd163539b0 ""
   "C:/Users/vagne/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/vagne/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
-  "c:/xampp/htdocs/erp-firma/public/mono/main.tex" 1726672204 378 b11109ee58844bf626446a54ee7ffa43 ""
-  "main.aux" 1726672207 585 7c4d6a383fb7918aa6a29ead3b3fb609 "pdflatex"
-  "main.tex" 1726672204 378 b11109ee58844bf626446a54ee7ffa43 ""
+  "c:/xampp/htdocs/erp-firma/public/mono/main.tex" 1727008200 360 ab60c87e34c37c0d18253ca3faaed265 ""
+  "main.aux" 1727008204 585 7c4d6a383fb7918aa6a29ead3b3fb609 "pdflatex"
+  "main.tex" 1727008200 360 ab60c87e34c37c0d18253ca3faaed265 ""
   (generated)
   "main.aux"
   "main.log"

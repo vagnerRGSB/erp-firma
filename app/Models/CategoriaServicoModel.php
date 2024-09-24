@@ -9,7 +9,7 @@ class CategoriaServicoModel extends Model
     protected $table            = 'categoria_servico';
     protected $primaryKey       = 'idCategoriaServico';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
     protected $allowedFields    = ["nome","horaCobrada"];

@@ -26,7 +26,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a class="dropdown-item" href="<?= url_to("estado.listar") ?>"><i class="bi bi-list"></i> Lista Estados</a></li>
-            <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de cidades</a></li>
+            <li><a class="dropdown-item" href="<?= url_to("cidade.listar") ?>"> <i class="bi bi-list"></i> Lista de cidades</a></li>
             <li><a class="dropdown-item" href="#"> <i class="bi bi-list"></i> Lista de localidades Cidades</a></li>
           </ul>
         </li>

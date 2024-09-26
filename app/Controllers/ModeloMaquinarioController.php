@@ -53,9 +53,14 @@ class ModeloMaquinarioController extends BaseController
         echo view("layouts/footer");
     }
 
-    public function editar()
+    public function editar($param_marca, $param_categoria)
     {
-        echo view("layouts/header");
+        echo view("layouts/header",[
+            "marcas" => $this->marca->findAll(),
+            "item_marca" => $this->marca->find($param_marca),
+            "categorias" => $this->categoria_maquinario->findAll(),
+            "item_categoria" => $this->categoria_maquinario->find($param_categoria)
+        ]);
         echo view("layouts/menuMaster");
         echo "Editar";
         echo view("layouts/footer");

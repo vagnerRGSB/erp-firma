@@ -1,0 +1,132 @@
+INFO - 2024-09-26 03:06:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-26 03:06:59 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'erp_firma', 3306, '', 0)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\erp-firma\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\erp-firma\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\erp-firma\app\Controllers\LoginController.php(35): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\LoginController->onLogin()
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\erp-firma\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\erp-firma\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\erp-firma\system\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\erp-firma\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\erp-firma\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\erp-firma\app\Controllers\LoginController.php(35): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(933): App\Controllers\LoginController->onLogin()
+#7 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#8 C:\xampp\htdocs\erp-firma\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\erp-firma\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\erp-firma\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\erp-firma\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\erp-firma\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-09-26 03:06:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[Method: POST, Route: login/onLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1637): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\LoginController.php(35): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->onLogin()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-26 03:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:07:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 03:11:57 --> ErrorException: Undefined variable $itens
+[Method: GET, Route: cidade/listar]
+in APPPATH\Views\cidade\listar.php on line 18.
+ 1 APPPATH\Views\cidade\listar.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $itens', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\cidade\\listar.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\cidade\\listar.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('cidade/listar', [], true)
+ 5 APPPATH\Controllers\CidadeController.php(14): view('cidade/listar')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CidadeController->listar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CidadeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-26 03:14:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 03:14:11 --> ParseError: syntax error, unexpected token "}"
+[Method: GET, Route: cidade/listar]
+in APPPATH\Controllers\CidadeController.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\erp-firma\\app\\Controllers\\CidadeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CidadeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CidadeController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\CidadeController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-26 03:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:16:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 03:16:41 --> ErrorException: Undefined variable $cidades
+[Method: GET, Route: cidade/inserir]
+in APPPATH\Views\cidade\inserir.php on line 12.
+ 1 APPPATH\Views\cidade\inserir.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cidades', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\cidade\\inserir.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\cidade\\inserir.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('cidade/inserir', [], true)
+ 5 APPPATH\Controllers\CidadeController.php(30): view('cidade/inserir')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CidadeController->inserir()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CidadeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-26 03:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-26 03:19:34 --> ErrorException: Undefined variable $estados
+[Method: GET, Route: cidade/inserir]
+in APPPATH\Views\cidade\inserir.php on line 12.
+ 1 APPPATH\Views\cidade\inserir.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estados', 'C:\\xampp\\htdocs\\erp-firma\\app\\Views\\cidade\\inserir.php', 12)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-firma\\app\\Views\\cidade\\inserir.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('cidade/inserir', [], true)
+ 5 APPPATH\Controllers\CidadeController.php(30): view('cidade/inserir')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CidadeController->inserir()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CidadeController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\erp-firma\\public\\index.php')
+INFO - 2024-09-26 03:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-26 03:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

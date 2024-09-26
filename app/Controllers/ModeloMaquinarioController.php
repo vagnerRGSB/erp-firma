@@ -13,12 +13,14 @@ class ModeloMaquinarioController extends BaseController
     private $modelo_maquinario;
     private $categoria_maquinario;
     private $marca;
+    private $db;
 
     public function __construct()
     {
         $this->modelo_maquinario = new ModeloMaquinarioModel();
         $this->categoria_maquinario = new CategoriaMaquinarioModel();
         $this->marca = new MarcaModel();
+        
     }
 
     public function listar()
@@ -31,10 +33,18 @@ class ModeloMaquinarioController extends BaseController
          * inner join categoria_maquinario cm on mm.idCategoriaMaquinario=cm.idCategoriaMaquinario 
          * inner join marca ma on mm.idMarca=ma.idMarca; 
          */
+
+         $db = \Config\Database::connect();
+         $sql= "select mm.idModeloMaquinario, cm.nome as categoria, ma.nome as marca, mm.nome as modelo
+          from modelo_maquinario mm 
+          inner join categoria_maquinario cm on mm.idCategoriaMaquinario=cm.idCategoriaMaquinario 
+          inner join marca ma on mm.idMarca=ma.idMarca"; 
+          $resultado = $db->query($sql)->getResult();
+          var_dump($resultado);
         
         echo view("layouts/header", [
-            "itens" => $this->modelo_maquinario->orderBy("nome")->paginate(10),
-            "pager" => $this->modelo_maquinario->pager
+            "itens" => $resultado,
+            
             
         ]);
         echo view("layouts/menuMaster");

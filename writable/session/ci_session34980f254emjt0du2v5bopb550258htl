@@ -1,1 +1,0 @@
-__ci_last_regenerate|i:1724107569;_ci_previous_url|s:36:"http://localhost:8080/usuario/listar";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:4:"nome";s:25:"Fernando Luis de Oliveira";s:5:"email";s:27:"fernando.oliveira@email.com";s:5:"senha";s:3:"122";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:7:"success";s:3:"old";}success|s:25:"Fernando Luis de Oliveira";

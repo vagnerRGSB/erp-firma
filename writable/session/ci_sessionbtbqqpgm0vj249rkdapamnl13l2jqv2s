@@ -1,1 +1,0 @@
-__ci_last_regenerate|i:1724017621;_ci_previous_url|s:36:"http://localhost:8080/estado/inserir";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:3:{s:8:"idEstado";s:2:"12";s:4:"nome";s:8:"Alagoass";s:5:"sigla";s:2:"AL";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:6:"errors";s:3:"old";}errors|a:1:{s:5:"sigla";s:51:"Já temos um registro relacionado à seguinte sigla";}

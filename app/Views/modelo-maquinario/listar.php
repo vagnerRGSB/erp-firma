@@ -16,11 +16,12 @@
                 <th colspan="2" class="text-start">Modelo</th>
               </tr>
             </thead>
-            <?php foreach ($itens as $item) : ?>
+            <?php foreach ($itens as $item) :
+              var_dump($item->idModeloMaquinario); ?>
               <tr>
-                <th class="text-start mb-1 col"><?php echo $item["idCategoriaMaquinario"] ?></th>
-                <th class="text-start mb-1 col"><?php echo $item["idMarca"] ?></th>
-                <th class="text-start mb-1 col"><?php echo $item["nome"] ?></th>
+                <th class="text-start mb-1 col"><?php echo $item->categoria ?></th>
+                <th class="text-start mb-1 col"><?php echo $item->marca ?></th>
+                <th class="text-start mb-1 col"><?php echo $item->modelo ?></th>
                 <th class="text-end mb-1 col g-2">
                   <a class="btn btn-warning mb-1 lg-3" href="#"> <i class="bi bi-pen"></i> Editar</a>
                   <a class="btn btn-danger mb-1 lg-3" href="#"> <i class="bi bi-trash"></i> Excluir</a>
@@ -30,7 +31,7 @@
             <thead></thead>
           </table>
           <div class="container">
-          <?= $pager->links(); ?>
+          
           </div>
 
         </div>

@@ -27,11 +27,13 @@ class Peca extends Migration
             ],
             "valorUnit" => [
                 "type" => "double",
-                "unsigned" => true
+                "unsigned" => true,
+                "default" => 00.00
             ],
             "quantiaEstoque" => [
                 "type" => "double",
-                "unsigned" => true
+                "unsigned" => true,
+                "default" => 00.00
             ]
         ]);
         $this->forge->addPrimaryKey("idPeca");

@@ -20,6 +20,7 @@ class Cliente extends Migration
             [
                 "type" => "varchar",
                 "constraint" => 1,
+                "default"=>"f"
             ],
             "nome" =>
             [
@@ -34,12 +35,15 @@ class Cliente extends Migration
             ],
             "logradouro" => [
                 "type" => "varchar",
-                "constraint" => 200
+                "constraint" => 200,
+                "null"=>true
             ],
             "numLogradouro" =>
             [
                 "type" => "int",
-                "constraint" => 5
+                "constraint" => 5,
+                "unsigned"=>true,
+                "null"=>true
             ],
             "complemento" =>
             [
@@ -51,7 +55,8 @@ class Cliente extends Migration
             [
                 "type" => "varchar",
                 "constraint" => 150,
-                "unique" => true
+                "unique" => true,
+                "null"=>true
             ],
             "idLocalidade" =>
             [

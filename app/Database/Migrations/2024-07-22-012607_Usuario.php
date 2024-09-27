@@ -30,7 +30,8 @@ class Usuario extends Migration
             "senha" =>
             [
                 "type" => "varchar",
-                "constraint" => 300
+                "constraint" => 300,
+                "null" => true
             ]
         ]);
 

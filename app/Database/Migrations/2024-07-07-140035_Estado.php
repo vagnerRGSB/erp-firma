@@ -26,7 +26,6 @@ class Estado extends Migration
                 [
                     "type" => "varchar",
                     "constraint" => "2",
-                    "unique" => true
                 ]
             ]
         );

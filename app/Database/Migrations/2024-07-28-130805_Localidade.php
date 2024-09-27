@@ -23,7 +23,7 @@ class Localidade extends Migration
             "cep" =>
             [
                 "type" => "varchar",
-                "constraint" => 8,
+                "constraint" => 10,
             ],
             "idCidade" =>
             [

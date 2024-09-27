@@ -22,11 +22,8 @@ class Especificacao extends Migration
             ],
             "especificacao" => [
                 "type" => "varchar",
-                "constraint" => "100",
-            ],
-            "dimensoes" => [
-                "type" => "varchar",
-                "constraint" => 100
+                "constraint" => 100,
+                "null"=>true
             ]
         ]);
         $this->forge->addPrimaryKey("idEspecificacao");

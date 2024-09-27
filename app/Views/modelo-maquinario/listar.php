@@ -31,7 +31,7 @@
             <thead></thead>
           </table>
           <div class="container">
-          
+          ]
           </div>
 
         </div>

@@ -18,7 +18,8 @@ class Servico extends Migration
             ],
             "dataCadastro" =>
             [
-                "type" => "datetime"
+                "type" => "datetime",
+                "null" => true
             ],
             "descricao" =>
             [

@@ -18,6 +18,7 @@ class UsuarioController extends BaseController
     {
         $id = [session("logado")["idUsuario"]];
         echo view("layouts/header", [
+            //"itens" => $this->usuario->findAll(),
             "itens" => $this->usuario->whereNotIn("idUsuario", $id)->orderBy("nome")->paginate(10),
             "pager" => $this->usuario->pager
         ]);

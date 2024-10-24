@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 use App\Models\MaquinarioModel;
 use App\Models\MarcaModel;
 use App\Models\ModeloModel;
+use CodeIgniter\Database\Database;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class ModeloController extends BaseController
@@ -14,16 +15,32 @@ class ModeloController extends BaseController
     private $modelo;
     private $marca;
     private $maquinario;
+    private $dataBase;
 
     public function __construct()
     {
         $this->modelo = new ModeloModel();
         $this->marca = new MarcaModel();
         $this->maquinario = new MaquinarioModel();
+        $this->dataBase = \Config\Database::connect();
     }
     public function listar()
     {
-        $dados = $this->modelo->paginate(10);
+
+        $dados = $this->modelo->select(
+            "modelo.idModelo, modelo.nome as nomeModelo,
+             marca.nome as nomeMarca,
+             maquinario.nome as nomeMaquinario"
+        )->join(
+            "marca",
+            "marca.idMarca=modelo.idMarca",
+            "inner"
+        )->join(
+            "maquinario",
+            "maquinario.idMaquinario=modelo.idMaquinario",
+            "inner"
+        )->paginate(10);
+
         $pager = $this->modelo->pager;
         return view(
             "modelo/listar",

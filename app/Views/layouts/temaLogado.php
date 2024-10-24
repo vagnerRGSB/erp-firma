@@ -70,8 +70,8 @@
     </div>
   </nav>
 
-  <div class="container-lg">
-        <div class="m-3">
+  <div class="container">
+    <div class="m-3">
       <?= $this->renderSection("conteudo") ?>
     </div>
   </div>

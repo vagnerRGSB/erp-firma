@@ -48,7 +48,7 @@ class MaquinarioController extends BaseController
             if(is_null($dados["idMaquinario"])|| $dados["idMaquinario"]== ""){
                 return redirect()->route("maquinario.listar")->withInput()->with("success","Maquinário registrado (".$dados["nome"].")");
             }else{
-                return redirect()->route("maquinario.listar")->withInput()->with("success","Maquinario atualizado (".$$dados["nome"].")");
+                return redirect()->route("maquinario.listar")->withInput()->with("success","Maquinario atualizado (".$dados["nome"].")");
             }
         }else{
             return redirect()->back()->withInput()->with("errors","Erro em gravar maquinário");

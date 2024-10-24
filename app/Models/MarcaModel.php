@@ -9,10 +9,12 @@ class MarcaModel extends Model
     protected $table            = 'marca';
     protected $primaryKey       = 'idMarca';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
+    protected $returnType       = 'object';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ["nome"];
+    protected $allowedFields    = [
+        "nome"
+    ];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
@@ -28,7 +30,9 @@ class MarcaModel extends Model
     protected $deletedField  = 'deleted_at';
 
     // Validation
-    protected $validationRules      = [];
+    protected $validationRules      = [
+        "nome" => "required|min_lenght[3]|max_lenght[200]"
+    ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;

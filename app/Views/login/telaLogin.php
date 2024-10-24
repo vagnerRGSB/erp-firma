@@ -87,7 +87,7 @@
         <form class="login-form" action="<?= url_to("login.onLogin") ?>" method="post">
             <h2>Login</h2>
             <div>
-                <?php if(session()->has("error_login")): ?>
+                <?php if (session()->has("error_login")): ?>
                     <span class="text text-danger">
                         <?= session()->getFlashdata("error_login") ?>
                     </span>
@@ -96,13 +96,16 @@
             <div>
                 <label class="form-label" for="email">E-mail</label>
                 <input class="form-control" type="text" id="email" name="email">
-               <span class="text text-danger"><?= session()->getFlashdata("errors")["email"] ?? "" ?></span>
+                <span class="text text-danger"><?= session()->getFlashdata("errors")["email"] ?? "" ?></span>
             </div>
 
             <div>
                 <label class="form-label" for="password">Senha</label>
                 <input class="form-control" type="password" id="senha" name="senha">
-                <span class="text text-danger"> <?= session()->getFlashdata("errors")["senha"] ?? "" ?></span>
+                <div class="text form-label">
+                    <span class="text text-danger"> <?= session()->getFlashdata("errors")["senha"] ?? "" ?></span>
+                </div>
+
             </div>
 
 

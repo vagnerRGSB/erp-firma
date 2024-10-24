@@ -1,0 +1,57 @@
+ERROR - 2024-10-18 12:10:55 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "home.principal" (urlencoded: "home.principal"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-10-18 12:10:55 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('home.principal')
+ 2 APPPATH\Views\layouts\temaLogado.php(20): url_to('home.principal')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\VTornos\\app\\Views\\layouts\\temaLogado.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layouts/temaLogado', [], true)
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home/principal', [], true)
+ 7 APPPATH\Controllers\HomeController.php(12): view('home/principal')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->principal()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\VTornos\\public\\index.php')
+ERROR - 2024-10-18 12:11:52 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "home.principal" (urlencoded: "home.principal"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-10-18 12:11:52 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('home.principal')
+ 2 APPPATH\Views\layouts\temaLogado.php(20): url_to('home.principal')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\VTornos\\app\\Views\\layouts\\temaLogado.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layouts/temaLogado', [], true)
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home/principal', [], true)
+ 7 APPPATH\Controllers\HomeController.php(12): view('home/principal')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->principal()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\VTornos\\public\\index.php')
+ERROR - 2024-10-18 19:03:27 --> Language.invalidMessageFormat: $message: "{0, string} não é uma rota válida.", $args: "home.principal" (urlencoded: "home.principal"), MessageFormatter Error: "msgfmt_create: message formatter creation failed: U_ILLEGAL_ARGUMENT_ERROR" (1)
+CRITICAL - 2024-10-18 19:03:27 --> CodeIgniter\Router\Exceptions\RouterException: {0, string} não é uma rota válida.
+【Warning】Also, invalid string(s) was passed to the Language class. See log file for details.
+[Method: GET, Route: /]
+in SYSTEMPATH\Helpers\url_helper.php on line 494.
+ 1 SYSTEMPATH\Helpers\url_helper.php(494): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('home.principal')
+ 2 APPPATH\Views\layouts\temaLogado.php(20): url_to('home.principal')
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\VTornos\\app\\Views\\layouts\\temaLogado.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('layouts/temaLogado', [], true)
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home/principal', [], true)
+ 7 APPPATH\Controllers\HomeController.php(12): view('home/principal')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->principal()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\VTornos\\public\\index.php')

@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1729368562;_ci_previous_url|s:37:"http://localhost:8080/marca/editar/15";_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:7:"idMarca";s:2:"15";s:4:"nome";s:7:"Hyundai";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"new";s:7:"success";s:3:"new";}success|s:28:"Marca atualizada ( Hyundai )";

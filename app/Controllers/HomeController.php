@@ -7,8 +7,14 @@ use CodeIgniter\HTTP\ResponseInterface;
 
 class HomeController extends BaseController
 {
-    public function index()
+    public function principal()
     {
-        //
+        return view("home/principal");
+    }
+    public function graficoServicos(){
+        return view("home/graficoServicos");
+    }
+    public function graficoPecas(){
+        return view("home/graficoPecas");
     }
 }

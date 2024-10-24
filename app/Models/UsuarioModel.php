@@ -35,7 +35,7 @@ class UsuarioModel extends Model
     protected $validationRules      = [
         "nome" => "required|min_length[3]|max_length[150]",
         "email" => "required|min_length[3]|max_length[150]|valid_email",
-        "senha" => "required|max_length[255]"
+        "senha" => "required|max_length[60]"
     ];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
